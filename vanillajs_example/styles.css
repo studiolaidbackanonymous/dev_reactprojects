@@ -15,6 +15,7 @@ h1, h2 {
 .btn {
   font: inherit;
   padding: 0.5rem 1.5rem;
+  /* padding: 8px 24px; */
   cursor: pointer;
   border-radius: 4px;
   background-color: #800040;
@@ -65,7 +66,7 @@ h1, h2 {
 .backdrop {
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0,0.75);
   width: 100%;
   height: 100vh;
   top: 0;
