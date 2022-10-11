@@ -1,7 +1,13 @@
+import "./ExpenseItem.css";
+
 function ExpenseItem() {
   return (
-    <div>
-      <h2>ada lovalace day</h2>
+    <div className="expense-item ">
+      <div>Date</div>
+      <div className="expense-item__description">
+        <h2>Car Insurance</h2>
+      </div>
+      <div className="expense-item__price">Rs 10,000</div>
     </div>
   );
 }
