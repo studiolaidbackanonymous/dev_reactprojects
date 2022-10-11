@@ -1,5 +1,9 @@
 function ExpenseItem() {
-  return <div></div>;
+  return (
+    <div>
+      <h2>ada lovalace day</h2>
+    </div>
+  );
 }
 
 export default ExpenseItem;
