@@ -5,6 +5,7 @@ function App() {
     <div>
       <h1>786 lets share the magic of creation</h1>
       <ExpenseItem />
+      <ExpenseItem />
     </div>
   );
 }
