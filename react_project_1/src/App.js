@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   // “When principles that run against your deepest convictions begin to win the day, then battle is your calling, and peace has become sin; you must, at the price of dearest peace, lay your convictions bare before friend and enemy, with all the fire of your faith.”
@@ -28,30 +28,7 @@ function App() {
 
   return (
     <div>
-      <h1>786 lets share the magic of creation</h1>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
-
-      <ExpenseItem
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-      />
+      <Expenses items={expenses} />
     </div>
   );
 }
