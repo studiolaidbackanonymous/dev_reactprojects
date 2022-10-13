@@ -1,18 +1,14 @@
 import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem() {
-  //dynamic variables
-  const expenseDate = "2022, 10, 11";
-  const expenseTitle = "Car Insurance";
-  const expenseAmount = 10000;
-
+function ExpenseItem(props) {
   return (
     <div className="expense-item ">
-      <div>{expenseDate}</div>
+      <ExpenseDate date={props.date}></ExpenseDate>
       <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
+        <h2>{props.title}</h2>
       </div>
-      <div className="expense-item__price">{expenseAmount}</div>
+      <div className="expense-item__price">{props.amount}</div>
     </div>
   );
 }
