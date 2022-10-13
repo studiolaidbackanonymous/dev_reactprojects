@@ -1,7 +1,7 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   // “When principles that run against your deepest convictions begin to win the day, then battle is your calling, and peace has become sin; you must, at the price of dearest peace, lay your convictions bare before friend and enemy, with all the fire of your faith.”
   // ― Abraham Kuyper
 
@@ -42,6 +42,6 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
