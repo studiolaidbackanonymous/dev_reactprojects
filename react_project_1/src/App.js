@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   // “When principles that run against your deepest convictions begin to win the day, then battle is your calling, and peace has become sin; you must, at the price of dearest peace, lay your convictions bare before friend and enemy, with all the fire of your faith.”
@@ -38,7 +39,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>786</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
