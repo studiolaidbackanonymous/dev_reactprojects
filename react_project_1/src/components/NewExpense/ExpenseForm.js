@@ -24,7 +24,7 @@ const ExpenseForm = (props) => {
     // });
   };
 
-  const amountChnageHandler = (event) => {
+  const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
     // setEnteredInput({ ...userInput, enteredAmount: event.target.value });
     // setEnteredInput((prevState) => {
@@ -72,7 +72,7 @@ const ExpenseForm = (props) => {
             min="0.01"
             step="0.01"
             value={enteredAmount}
-            onChange={amountChnageHandler}
+            onChange={amountChangeHandler}
           ></input>
         </div>
 
