@@ -22,18 +22,19 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-
-        {filteredExpenses.map((item) => {
-          // if (filteredYear === item.date.getFullYear().toString())
-          return (
-            <ExpenseItem
-              key={item.id}
-              title={item.title}
-              amount={item.amount}
-              date={item.date}
-            />
-          );
-        })}
+        {filteredExpenses.length === 0 && <p>No expenses found</p>}
+        {filteredExpenses.length > 0 &&
+          filteredExpenses.map((item) => {
+            // if (filteredYear === item.date.getFullYear().toString())
+            return (
+              <ExpenseItem
+                key={item.id}
+                title={item.title}
+                amount={item.amount}
+                date={item.date}
+              />
+            );
+          })}
         {/* <ExpenseItem
           title={props.items[0].title}
           amount={props.items[0].amount}
